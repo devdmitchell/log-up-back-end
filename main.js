@@ -41,7 +41,13 @@ function isRegisteredUser(email) {
   return email === user1 || email === user2 || email === user3;
 }
 
-
+function passwordMatches(email, password) {
+  return (
+    (email === user1 && password === password1) ||
+    (email === user2 && password === password2) ||
+    (email === user3 && password === password3)
+  );
+}
 
 
 
