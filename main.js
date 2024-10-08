@@ -13,11 +13,31 @@ const password3 = "supToThis"
 
 // **YOUR** code below. Pass those tests!
 
+// function isValidEmail(email){
+//   if (email.endsWith('.prsvr@gmail.com') && email.indexOf('.prsvr@gmail.com') > 0 || email.endsWith('perseverenow.org') && email.indexOf('@perseverenow.org') > 0){
+//     return true
+//   } else {
+//     return false
+//   }
+// }
+
+function isValidEmail(user){
+  if(user.indexOf(".prsvr@gmail.com") >= 1){
+    return true
+  }if(user.indexOf("@perseverenow.org") >= 1){
+    return true
+  }else {
+    return false
+  }
+}
+
 function isValidPassword(password){
   return (password.length >= 8 && 
     password.toUpperCase() !== password && 
     password.toLowerCase() !== password)
 }
+
+
 
 
 
