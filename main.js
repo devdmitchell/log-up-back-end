@@ -13,6 +13,12 @@ const password3 = "supToThis"
 
 // **YOUR** code below. Pass those tests!
 
+function isValidPassword(password){
+  return (password.length >= 8 && 
+    password.toUpperCase() !== password && 
+    password.toLowerCase() !== password)
+}
+
 
 
 // Our code below. Do not touch!
