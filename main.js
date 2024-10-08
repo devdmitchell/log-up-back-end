@@ -37,6 +37,10 @@ function isValidPassword(password){
     password.toLowerCase() !== password)
 }
 
+function isRegisteredUser(email) {
+  return email === user1 || email === user2 || email === user3;
+}
+
 
 
 
